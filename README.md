@@ -1,7 +1,7 @@
 <div align="center">
 
 # Martín Varela
-### Software Engineering & Computer Science · Developer Tooling & Vector Systems
+### Computer Science Student & Software Developer · Full-Stack & Tooling
 
 [![Argentina](https://img.shields.io/badge/Ubicación-Argentina%20(UTC--3)-171717?style=flat-square&logo=googlemaps&logoColor=white)](https://github.com/martinvarela206)
 [![Status](https://img.shields.io/badge/Disponibilidad-Proyectos%20%26%20Open%20Source-0f766e?style=flat-square)](https://github.com/martinvarela206)
@@ -9,25 +9,25 @@
 [![CV Imprimible](https://img.shields.io/badge/CV-Versión%20Imprimible%20ATS-27272a?style=flat-square&logo=readme&logoColor=white)](https://martinvarela206.github.io/cv-printable/)
 
 <p align="center">
-  <em>Estudiante avanzado de Licenciatura en Ciencias de la Computación (UNSJ, Argentina).<br>
-  Especializado en arquitectura de herramientas para desarrolladores, manipulación matemática de gráficos vectoriales (SVG/Canvas), compiladores y sistemas web deterministas sin dependencias innecesarias.</em>
+  <em>Estudiante de Licenciatura en Ciencias de la Computación en la Universidad Nacional de San Juan (UNSJ, Argentina).<br>
+  Desarrollo software con bases sólidas en programación orientada a objetos, algoritmos y desarrollo web/móvil, creando herramientas prácticas y soluciones de código abierto.</em>
 </p>
 
-[ 🚀 Proyecto Insignia: AntiDraw ](#-proyecto-insignia--flagship-case-study) &nbsp;·&nbsp;
-[ 📂 Proyectos Destacados ](#-proyectos-de-ingeniería-seleccionados) &nbsp;·&nbsp;
+[ 🚀 Proyecto Destacado: AntiDraw ](#-proyecto-destacado-antidraw) &nbsp;·&nbsp;
+[ 📂 Proyectos Principales ](#-proyectos-principales) &nbsp;·&nbsp;
 [ 📚 Catálogo Público ](#-catálogo-completo-de-repositorios-públicos) &nbsp;·&nbsp;
-[ 🛠️ Arsenal Técnico ](#️-arsenal-técnico--dominios) &nbsp;·&nbsp;
+[ 🛠️ Arsenal Técnico ](#️-arsenal-técnico) &nbsp;·&nbsp;
 [ ☕ Ko-fi ](https://ko-fi.com/martinvarela206)
 
 ---
 
 </div>
 
-## 💎 Proyecto Insignia / Flagship Case Study
+## 💎 Proyecto Destacado: AntiDraw
 
-### 📐 [AntiDraw](https://github.com/martinvarela206/AntiDraw) — Editor Vectorial SVG Profesional para VS Code & Antigravity
+### 📐 [AntiDraw](https://github.com/martinvarela206/AntiDraw) — Editor Vectorial SVG para VS Code & Antigravity
 
-> **"Precisión geométrica de software vectorial de escritorio integrada directamente en el IDE, erradicando la contaminación de namespaces propietarios en archivos SVG."**
+> **"Un editor vectorial integrado directamente en el IDE para crear y retocar gráficos SVG limpios sin interrumpir el flujo de programación."**
 
 <div align="center">
 
@@ -38,112 +38,125 @@
 
 </div>
 
-- **El Reto**: Los editores de escritorio interrumpen el flujo de desarrollo, mientras herramientas clásicas como Inkscape inyectan namespaces parásitos (`inkscape:*`) que rompen bundlers modernos (*Vite, Next.js*).
-- **La Solución**: Extensión nativa en TypeScript que genera marcado W3C SVG 100% puro con metadatos no destructivos en sidecar (`.svg.json`), motor de curvas Bézier por polinomios de Bernstein, booleanas sobre grafos planares (DCEL) y optimizador *Save for Web* con comparativa dual en vivo.
+- **El Problema**: Cambiar a editores de escritorio externos interrumpe el ritmo de desarrollo, mientras que programas tradicionales como Inkscape suelen inyectar namespaces propietarios (`inkscape:*`) que ensucian los archivos y traen inconvenientes al compilar con Vite o Next.js.
+- **La Solución**: Extensión en TypeScript para manipular vectores sin salir del editor, generando SVG estándar W3C libre de etiquetas innecesarias. Guarda los datos de edición en un archivo sidecar complementario (`.svg.json`) e incluye herramientas de nodos Bézier, snapping, operaciones de formas y optimizador de imágenes para web.
 
 ---
 
-## 🚀 Proyectos de Ingeniería Seleccionados
+## 🚀 Proyectos Principales
 
-| Proyecto | Arquitectura & Foco Técnico | Stack | Acceso |
+| Proyecto | Descripción & Enfoque | Stack | Enlaces |
 | :--- | :--- | :--- | :---: |
-| 🎓 **[Plan Académico LCC](https://github.com/martinvarela206/PlanDeEstudio)** | **Plataforma web curricular determinista** para la *Licenciatura en Ciencias de la Computación (Plan 2022)*. Evaluación de correlatividades en tiempo real, cálculo de promedio histórico con/sin aplazos, persistencia local y renderizado reactivo sin frameworks pesados. | `JavaScript (ES6+)` `HTML5` `CSS3` `Local Storage` | [Demo Online](https://martinvarela206.github.io/PlanDeEstudio/) · [Repo](https://github.com/martinvarela206/PlanDeEstudio) |
-| 💻 **[Pseudocódigo a C](https://github.com/martinvarela206/Pseudocodigo)** | **Entorno de desarrollo y transpilador web**. Analizador de sintaxis de pseudocódigo en tiempo real con diagnóstico estático, generación de diagramas de flujo lineales y transpilación a código ANSI C limpio y estructurado. | `TypeScript` `Web IDE` `AST / Transpiler` `C` | [Repo](https://github.com/martinvarela206/Pseudocodigo) |
-| 🧠 **[MemoCard](https://github.com/martinvarela206/MemoCard)** | **Suite de estudio y mnemotecnia algorítmica** para ciencias de la computación y teoría de autómatas. Incluye motor de ingesta y parseo en Python (`parse_slides.py`), renderizado tipográfico con fórmulas LaTeX y visor interactivo de flashcards. | `React` `Python` `LaTeX / KaTeX` `Vite` | [Repo](https://github.com/martinvarela206/MemoCard) |
-| 🗃️ **[Inventario LIA](https://github.com/martinvarela206/InventarioLIA)** | **Sistema de trazabilidad de activos y hardware** para el *Laboratorio de Informática Aplicada*. Arquitectura en capas con backend en Laravel/Blade, microfrontend reactivo desacoplado en Svelte ([InventarioLiaSvelte](https://github.com/martinvarela206/InventarioLiaSvelte)) y módulos core orientados a objetos en Java ([InventarioLiaJava](https://github.com/martinvarela206/InventarioLiaJava)). | `PHP / Laravel` `Svelte` `Java` `MySQL` | [Repo](https://github.com/martinvarela206/InventarioLIA) |
-| 🎙️ **[BBB-Scribe](https://github.com/martinvarela206/BBB-Scribe)** | **Pipeline de procesamiento y transcripción automatizada** para grabaciones y sesiones académicas en BigBlueButton. Procesamiento por lotes y estructuración de contenido técnico. | `Python` `Automation` `Media Parsing` | [Repo](https://github.com/martinvarela206/BBB-Scribe) |
-| 📱 **[GitMark](https://github.com/martinvarela206/GitMark)** | **Cliente móvil y multiplataforma** de organización, bookmarks técnicos y gestión de recursos para programadores. Arquitectura declarativa con sincronización ágil. | `Flutter` `Dart` `Cross-Platform Mobile` | [Repo](https://github.com/martinvarela206/GitMark) |
+| 🎓 **[Plan Académico LCC](https://github.com/martinvarela206/PlanDeEstudio)** | **Plataforma web interactiva para seguimiento de materias** de la *Licenciatura en Ciencias de la Computación (Plan 2022)*. Control de correlatividades, cálculo de promedios con y sin aplazos, modo oscuro y persistencia local sin dependencias externas pesadas. | `JavaScript (ES6+)` `HTML5` `CSS3` `Local Storage` | [Demo Online](https://martinvarela206.github.io/PlanDeEstudio/) · [Repo](https://github.com/martinvarela206/PlanDeEstudio) |
+| 💻 **[Pseudocódigo a C](https://github.com/martinvarela206/Pseudocodigo)** | **Entorno de desarrollo y transpilador web**. Permite redactar pseudocódigo estructurado con análisis de sintaxis en tiempo real, visualización simultánea de diagramas de flujo y traducción a código en lenguaje C. | `TypeScript` `Web IDE` `Transpiler` `C` | [Repo](https://github.com/martinvarela206/Pseudocodigo) |
+| 🧠 **[MemoCard](https://github.com/martinvarela206/MemoCard)** | **Suite de estudio y tarjetas mnemotécnicas (Flashcards)** para materias de computación (Teoría de la Computación). Cuenta con un script en Python para procesar diapositivas, soporte de fórmulas en LaTeX y aplicación interactiva en React. | `React` `Python` `LaTeX` `Vite` | [Repo](https://github.com/martinvarela206/MemoCard) |
+| 🗃️ **[Inventario LIA](https://github.com/martinvarela206/InventarioLIA)** | **Sistema de gestión de inventario y hardware** para el *Laboratorio de Informática Aplicada*. Estructura backend en Laravel/Blade, integración complementaria en Java ([InventarioLiaJava](https://github.com/martinvarela206/InventarioLiaJava)) y frontend desacoplado en Svelte ([InventarioLiaSvelte](https://github.com/martinvarela206/InventarioLiaSvelte)). | `PHP / Laravel` `Svelte` `Java` `MySQL` | [Repo](https://github.com/martinvarela206/InventarioLIA) |
+| 🎙️ **[BBB-Scribe](https://github.com/martinvarela206/BBB-Scribe)** | **Herramienta de automatización y transcripción** para grabaciones y clases universitarias en BigBlueButton mediante scripts en Python. | `Python` `Automation` `Media Parsing` | [Repo](https://github.com/martinvarela206/BBB-Scribe) |
+| 📱 **[GitMark](https://github.com/martinvarela206/GitMark)** | **Aplicación móvil multiplataforma** orientada a la organización de marcadores técnicos y repositorios para desarrolladores. | `Flutter` `Dart` `Mobile` | [Repo](https://github.com/martinvarela206/GitMark) |
 
 ---
 
 ## 📂 Catálogo Completo de Repositorios Públicos
 
-*Inventario actualizado de proyectos públicos con código abierto y documentación disponible en GitHub:*
+*Colección de proyectos públicos con código abierto y documentación disponible en GitHub:*
 
 <details open>
-<summary><b>🛠️ Herramientas de Desarrollo, Gráficos & Compiladores</b></summary>
+<summary><b>🛠️ Herramientas, Gráficos & Compiladores</b></summary>
 <br>
 
-| Repositorio | Stack | Descripción Técnica |
+| Repositorio | Stack | Descripción |
 | :--- | :---: | :--- |
-| 📐 **[AntiDraw](https://github.com/martinvarela206/AntiDraw)** | `TypeScript` `VS Code API` `SVG` | Editor vectorial profesional para VS Code y Antigravity con W3C SVG limpio y metadata sidecar. |
-| 💻 **[Pseudocodigo](https://github.com/martinvarela206/Pseudocodigo)** | `TypeScript` `AST` `C` | Editor web de pseudocódigo con análisis léxico, diagrama de flujo dinámico y transpilador a C. |
-| 🎙️ **[BBB-Scribe](https://github.com/martinvarela206/BBB-Scribe)** | `Python` `Audio/Video` | Pipeline para transcripción, extracción de audio y procesamiento de sesiones BigBlueButton. |
+| 📐 **[AntiDraw](https://github.com/martinvarela206/AntiDraw)** | `TypeScript` `VS Code API` `SVG` | Editor vectorial para VS Code y Antigravity con exportación SVG limpia y metadata sidecar. |
+| 💻 **[Pseudocodigo](https://github.com/martinvarela206/Pseudocodigo)** | `TypeScript` `Web IDE` `C` | Editor web de pseudocódigo con diagramas de flujo interactivos y transpilación a C. |
+| 🎙️ **[BBB-Scribe](https://github.com/martinvarela206/BBB-Scribe)** | `Python` `Audio/Video` | Scripts de descarga y transcripción para clases y grabaciones de BigBlueButton. |
 
 </details>
 
 <details open>
-<summary><b>🎓 Plataformas Educativas, Académicas & Algoritmos</b></summary>
+<summary><b>🎓 Universidad, Algoritmos & Prácticas Académicas</b></summary>
 <br>
 
-| Repositorio | Stack | Descripción Técnica |
+| Repositorio | Stack | Descripción |
 | :--- | :---: | :--- |
-| 🎓 **[PlanDeEstudio](https://github.com/martinvarela206/PlanDeEstudio)** | `JavaScript` `HTML5` `CSS3` | Plataforma interactiva de correlatividades, promedios y avance para la Lic. en Ciencias de la Computación. ([Demo Online](https://martinvarela206.github.io/PlanDeEstudio/)) |
-| 🧠 **[MemoCard](https://github.com/martinvarela206/MemoCard)** | `React` `Python` `LaTeX` | Generador y visualizador de flashcards para teoría computacional con renderizado matemático. |
-| 🧩 **[Trabajo-Integrador](https://github.com/martinvarela206/Trabajo-Integrador)** | `Java` `OOP` `Design Patterns` | Modelado de sistemas universitarios con herencia, polimorfismo, interfaces y colecciones. |
-| 🎓 **[Backend3-AlumnosApp](https://github.com/martinvarela206/Backend3-AlumnosApp)** | `Java` `Maven` | Aplicación integral de gestión de estudiantes, comisiones y registros académicos. |
-| 📝 **[BackEnd3-Practica0](https://github.com/martinvarela206/BackEnd3-Practica0)** | `JavaScript` `Node.js` | Fundamentos algorítmicos y lógica estructurada del lado del servidor. |
-| ☕ **[Clase01](https://github.com/martinvarela206/Clase01)** | `Java` | Implementaciones fundacionales en programación orientada a objetos. |
+| 🎓 **[PlanDeEstudio](https://github.com/martinvarela206/PlanDeEstudio)** | `JavaScript` `HTML5` `CSS3` | Seguimiento interactivo de materias, correlatividades y promedio LCC. ([Demo Online](https://martinvarela206.github.io/PlanDeEstudio/)) |
+| 🧠 **[MemoCard](https://github.com/martinvarela206/MemoCard)** | `React` `Python` `LaTeX` | Generador y visualizador de flashcards con soporte LaTeX para apuntes de computación. |
+| 🧩 **[Trabajo-Integrador](https://github.com/martinvarela206/Trabajo-Integrador)** | `Java` `OOP` | Proyecto integrador universitario con programación orientada a objetos, herencia y colecciones. |
+| 🎓 **[Backend3-AlumnosApp](https://github.com/martinvarela206/Backend3-AlumnosApp)** | `Java` `Maven` | Aplicación académica para la administración de estudiantes, materias y cursos. |
+| 📝 **[BackEnd3-Practica0](https://github.com/martinvarela206/BackEnd3-Practica0)** | `JavaScript` `Node.js` | Ejercicios de nivelación y fundamentos de lógica en desarrollo backend. |
+| ☕ **[Clase01](https://github.com/martinvarela206/Clase01)** | `Java` | Fundamentos y primeros pasos en desarrollo orientado a objetos con Java. |
 
 </details>
 
 <details open>
-<summary><b>🏢 Sistemas de Gestión, Backend & Infraestructura</b></summary>
+<summary><b>🏢 Sistemas de Gestión & Backend</b></summary>
 <br>
 
-| Repositorio | Stack | Descripción Técnica |
+| Repositorio | Stack | Descripción |
 | :--- | :---: | :--- |
-| 📦 **[InventarioLIA](https://github.com/martinvarela206/InventarioLIA)** | `PHP` `Laravel` `Blade` | Sistema integral de control patrimonial y trazabilidad para el Laboratorio de Informática Aplicada. |
-| ⚡ **[InventarioLiaSvelte](https://github.com/martinvarela206/InventarioLiaSvelte)** | `Svelte` `Vite` `JS` | Frontend reactivo de alta velocidad desacoplado para consulta rápida del inventario LIA. |
-| ☕ **[InventarioLiaJava](https://github.com/martinvarela206/InventarioLiaJava)** | `Java` `OOP` | Módulo de lógica central y procesamiento estructurado de inventario en Java. |
-| 🐳 **[Dockerized-laravel-12-starter](https://github.com/martinvarela206/Dockerized-laravel-12-starter)** | `Docker` `Laravel 12` `Nginx` | Entorno de desarrollo multicontenedor optimizado y listo para producción en Laravel 12. |
-| 🚀 **[app01](https://github.com/martinvarela206/app01)** | `Laravel` `Breeze` `Blade` | Arquitectura de autenticación robusta y scaffolding de aplicaciones seguras en Laravel. |
-| 🧱 **[BasicLaravelApp](https://github.com/martinvarela206/BasicLaravelApp)** | `PHP` `Laravel` | Estructura base para desarrollos modulares en Laravel con arquitectura MVC limpia. |
-| 🔌 **[microservicios-api-fork](https://github.com/martinvarela206/microservicios-api-fork)** | `PHP` `REST API` | Pruebas de concepto y servicios desacoplados basados en microservicios ligeros. |
+| 📦 **[InventarioLIA](https://github.com/martinvarela206/InventarioLIA)** | `PHP` `Laravel` `Blade` | Sistema integral de inventario y trazabilidad para el Laboratorio de Informática Aplicada. |
+| ⚡ **[InventarioLiaSvelte](https://github.com/martinvarela206/InventarioLiaSvelte)** | `Svelte` `Vite` `JS` | Frontend reactivo en Svelte para la consulta rápida del inventario LIA. |
+| ☕ **[InventarioLiaJava](https://github.com/martinvarela206/InventarioLiaJava)** | `Java` `OOP` | Módulo de lógica central y procesamiento del inventario desarrollado en Java. |
+| 🐳 **[Dockerized-laravel-12-starter](https://github.com/martinvarela206/Dockerized-laravel-12-starter)** | `Docker` `Laravel 12` `Nginx` | Entorno de desarrollo contenerizado con Docker listo para producción en Laravel 12. |
+| 🚀 **[app01](https://github.com/martinvarela206/app01)** | `Laravel` `Breeze` `Blade` | Configuración y arquitectura de autenticación robusta con Laravel Breeze. |
+| 🧱 **[BasicLaravelApp](https://github.com/martinvarela206/BasicLaravelApp)** | `PHP` `Laravel` | Aplicación base para proyectos en Laravel con estructura MVC y vistas Blade. |
+| 🔌 **[microservicios-api-fork](https://github.com/martinvarela206/microservicios-api-fork)** | `PHP` `REST API` | Arquitectura desacoplada basada en microservicios y APIs ligeras. |
 
 </details>
 
 <details open>
-<summary><b>📱 Frontend de Autor, Accesibilidad & Videojuegos</b></summary>
+<summary><b>📱 Frontend, Accesibilidad & Juegos</b></summary>
 <br>
 
-| Repositorio | Stack | Descripción Técnica |
+| Repositorio | Stack | Descripción |
 | :--- | :---: | :--- |
-| 📄 **[cv-printable](https://github.com/martinvarela206/cv-printable)** | `HTML5` `CSS3 (@media print)` | Currículum vitae web interactivo de nivel editorial con modo ATS y exportación a PDF de alta resolución. |
+| 📄 **[cv-printable](https://github.com/martinvarela206/cv-printable)** | `HTML5` `CSS3` | Curriculum vitae interactivo y optimizado para exportación e impresión web limpia en PDF. |
 | 💼 **[portfolio2025](https://github.com/martinvarela206/portfolio2025)** | `React` `Vite` `Tailwind` | Portafolio personal moderno y responsivo para exhibición de proyectos. |
-| 👁️ **[dw2-evaluacion-daltonismo](https://github.com/martinvarela206/dw2-evaluacion-daltonismo)** | `HTML5` `CSS3` `WCAG` | Auditoría y optimización de interfaces con criterios de accesibilidad visual y variantes de daltonismo. |
-| 📐 **[dimensiones-web](https://github.com/martinvarela206/dimensiones-web)** | `HTML5` `CSS3` | Pruebas de diseño adaptable, breakpoints fluidos y jerarquía espacial responsiva. |
-| 🌐 **[fullstack-integrador](https://github.com/martinvarela206/fullstack-integrador)** | `HTML5` `CSS3` `JavaScript` | Proyecto integrador full-stack integrando interfaz de usuario dinámica y lógica web. |
-| 🎨 **[Integrador-Disenio-Web-1](https://github.com/martinvarela206/Integrador-Disenio-Web-1)** | `HTML5` `CSS3` | Maquetación web semántica, estándares W3C y estilos responsivos modernos. |
-| 📱 **[GitMark](https://github.com/martinvarela206/GitMark)** | `Flutter` `Dart` | Aplicación móvil multiplataforma para organización de marcadores y repositorios. |
-| 🎮 **[Laberinto--](https://github.com/martinvarela206/Laberinto--)** | `JavaScript` `HTML5 Canvas` | Motor de videojuegos 2D para laberintos, pathfinding y puzzles lógicos en navegador. |
-| 🕹️ **[sanjuantec-jam2023](https://github.com/martinvarela206/sanjuantec-jam2023)** | `HTML5` `Canvas` `JS` | Videojuego experimental desarrollado contrarreloj durante la *Game Jam San Juan Tec 2023*. |
+| 👁️ **[dw2-evaluacion-daltonismo](https://github.com/martinvarela206/dw2-evaluacion-daltonismo)** | `HTML5` `CSS3` | Evaluación de interfaces con criterios de accesibilidad visual y variantes de daltonismo. |
+| 📐 **[dimensiones-web](https://github.com/martinvarela206/dimensiones-web)** | `HTML5` `CSS3` | Pruebas de maquetación adaptable, breakpoints fluidos y diseño responsivo. |
+| 🌐 **[fullstack-integrador](https://github.com/martinvarela206/fullstack-integrador)** | `HTML5` `CSS3` `JavaScript` | Proyecto integrador que combina interfaz dinámica y lógica web. |
+| 🎨 **[Integrador-Disenio-Web-1](https://github.com/martinvarela206/Integrador-Disenio-Web-1)** | `HTML5` `CSS3` | Maquetación web semántica, estándares W3C y estilos responsivos. |
+| 📱 **[GitMark](https://github.com/martinvarela206/GitMark)** | `Flutter` `Dart` | Aplicación móvil multiplataforma desarrollada con Flutter para organización de enlaces y repositorios. |
+| 🎮 **[Laberinto--](https://github.com/martinvarela206/Laberinto--)** | `JavaScript` `HTML5 Canvas` | Videojuego 2D de laberintos y puzzles de lógica desarrollado con HTML5 Canvas. |
+| 🕹️ **[sanjuantec-jam2023](https://github.com/martinvarela206/sanjuantec-jam2023)** | `HTML5` `Canvas` `JS` | Videojuego web desarrollado durante la Game Jam *San Juan Tec 2023*. |
 
 </details>
 
 ---
 
-## 🛠️ Arsenal Técnico & Dominios
+## 🛠️ Arsenal Técnico
 
-```
-┌── LENGUAJES CORE ────────────────────────────────────────────────────────┐
-│ TypeScript · JavaScript (ES6+) · Java (SE/Maven) · Python · C · Dart · PHP│
-├── FRONTEND & GRÁFICOS ───────────────────────────────────────────────────┤
-│ SVG Vector Math · Canvas API · React · Svelte · Vite · CSS3 Editorial     │
-├── BACKEND & ARQUITECTURA ────────────────────────────────────────────────┤
-│ Laravel · Node.js · RESTful APIs · MVC · Docker · MySQL · Git / CI       │
-└── EXTENSIBILIDAD & MÓVIL ────────────────────────────────────────────────┤
-│ VS Code Extension API · Open VSX · Flutter (Multiplataforma) · Linux     │
-└──────────────────────────────────────────────────────────────────────────┘
-```
+#### Lenguajes de Programación
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/es/docs/Web/JavaScript)
+[![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black)](https://en.cppreference.com/w/c)
+[![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)](https://www.php.net/)
+[![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white)](https://dart.dev/)
+
+#### Frontend & Desarrollo Web
+[![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![Svelte](https://img.shields.io/badge/Svelte-FF3E00?style=flat-square&logo=svelte&logoColor=white)](https://svelte.dev/)
+[![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)](https://laravel.com/)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/es/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)](https://developer.mozilla.org/es/docs/Web/CSS)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
+
+#### Móvil, Entorno & Herramientas
+[![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)](https://flutter.dev/)
+[![VS Code API](https://img.shields.io/badge/VS%20Code%20API-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)](https://code.visualstudio.com/api)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)](https://www.docker.com/)
+[![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)](https://git-scm.com/)
+[![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)](https://www.kernel.org/)
 
 ---
 
-## 💡 Lo que estoy construyendo e investigando ahora
+## 💡 En lo que estoy trabajando & explorando
 
-- 🔬 Perfeccionando el pipeline de transformaciones homográficas y algoritmos booleanos en **AntiDraw**.
-- 📐 Investigando estructuras de datos geométricas avanzadas (KD-Trees y Voronoi) aplicadas a aceleración de selección en canvas.
-- 📖 Profundizando en teoría de compiladores, análisis de grafos y optimización de tiempo de ejecución en la Licenciatura en Ciencias de la Computación.
+- 📐 Manteniendo y refinando la experiencia de uso en **AntiDraw**.
+- 🎓 Avanzando en materias y proyectos de la Licenciatura en Ciencias de la Computación (UNSJ).
+- 🛠️ Creando herramientas web y utilidades prácticas para mejorar el día a día al programar.
 
 ---
 
@@ -151,7 +164,7 @@
 
 ### 🤝 Contacto & Colaboraciones
 
-¿Tenés una propuesta de desarrollo, proyecto open-source o consulta de ingeniería?
+¿Tenés una propuesta de desarrollo, proyecto open-source o consulta?
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Martín%20Varela-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com)
 [![GitHub](https://img.shields.io/badge/GitHub-martinvarela206-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/martinvarela206)
@@ -160,6 +173,6 @@
 
 <br>
 
-<sub>*Crafted with precision & code clarity · Anti-Slop Editorial Profile.*</sub>
+<sub>*Perfil de GitHub mantenido por **Martín Varela** (`martinvarela206`).*</sub>
 
 </div>
